@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini E-Commerce Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple website using HTML, CSS, and JavaScript.</p>
-        <button onclick="changeBackground()">Change Background Color</button>
-    </div>
+  <header>
+    <h1>My E-Commerce Store</h1>
+  </header>
+  
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+  </nav>
 
-    <script src="script.js"></script>
+  <section class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/250x200" alt="Product 1">
+      <h2>Product 1</h2>
+      <p>Price: $10</p>
+      <button onclick="addToCart('Product 1')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x200" alt="Product 2">
+      <h2>Product 2</h2>
+      <p>Price: $20</p>
+      <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x200" alt="Product 3">
+      <h2>Product 3</h2>
+      <p>Price: $30</p>
+      <button onclick="addToCart('Product 3')">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My E-Commerce Store</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
